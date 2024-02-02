@@ -23,15 +23,22 @@ Matplotlib
 
 # Installation
 To get started, clone the repository and install the necessary dependencies:
+
 git clone https://github.com/aravi2/GCN-Variants-For-PowerSystems.git
+
 cd GCN-Variants-For-PowerSystems
+
 pip install torch torchvision torchaudio
+
 pip install torch-geometric
+
 pip install h5py numpy scikit-learn matplotlib
 
 
 # Data Preparation
+
 Download mydata.hf.zip from the repository, then unzip it.
+
 Move the mydata.h5 file into the project's root directory.
 
 
