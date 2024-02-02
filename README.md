@@ -1,16 +1,16 @@
 # GCN-Variants-For-PowerSystems
 
 Impedance-Aware Graph Convolutional Network (IA-GCN) for Power Systems
-The Impedance-Aware Graph Convolutional Network (IA-GCN) introduces an innovative approach to voltage estimation in electrical distribution networks by leveraging the unique properties of graph convolutional networks (GCNs) and incorporating impedance information directly into the network analysis. This repository contains the implementation of the IA-GCN model, aiming to enhance the accuracy and reliability of voltage estimation tasks.
+The Impedance-Aware Graph Convolutional Network (IA-GCN) presents an innovative approach to voltage estimation in electrical distribution networks by integrating graph convolutional networks (GCNs) with impedance data. This repository hosts the IA-GCN model, designed to enhance the accuracy of voltage estimation across electrical grids.
 
 Introduction
-Voltage estimation is a cornerstone of maintaining the efficiency, control, and reliability of electrical distribution networks. Conventional methods often overlook the complex interactions within the network's topology. The IA-GCN model addresses this gap by integrating the magnitude of impedance into the graph convolution process, thus providing a more detailed understanding of the network's electrical behavior.
+Effective voltage estimation is vital for the operational efficiency, control, and reliability of electrical distribution networks. Traditional methodologies often overlook the nuanced relationships within the network's topology. Addressing this gap, the IA-GCN model incorporates impedance magnitudes into the graph convolutional framework, enriching the model's understanding of the network's electrical properties and improving voltage estimation accuracy.
 
 Getting Started
-These instructions will guide you through setting up and running the IA-GCN model on your local machine.
+This section provides guidance on setting up and running the IA-GCN model on your system.
 
 Prerequisites
-Ensure you have the following software and libraries installed:
+Ensure the following tools and libraries are installed:
 
 Python 3.x
 PyTorch
@@ -19,38 +19,38 @@ h5py
 NumPy
 scikit-learn
 Matplotlib
-Installation
-Clone this repository to your local machine:
 
-bash
-Copy code
+
+Installation
+To get started, clone the repository and install the necessary dependencies:
 git clone https://github.com/aravi2/GCN-Variants-For-PowerSystems.git
 cd GCN-Variants-For-PowerSystems
-Install the required dependencies:
-
-bash
-Copy code
 pip install torch torchvision torchaudio
 pip install torch-geometric
 pip install h5py numpy scikit-learn matplotlib
+
+
 Data Preparation
-Download the mydata.h5 file provided in the repository and unzip it.
-Ensure the mydata.h5 file is placed in the root directory of the project.
+Download mydata.hf.zip from the repository, then unzip it.
+Move the mydata.h5 file into the project's root directory.
+
+
 Running the Model
-To execute the IA-GCN model, run the following command:
+Execute the Impedance_Mag_Aware_GCN.py script to run the model:
+python Impedance_Mag_Aware_GCN.py
 
-bash
-Copy code
-python main.py
-This will initiate the training process and display the performance metrics, along with visualizations of predicted vs. actual voltage values.
+This initiates the model's training phase, outputs performance metrics, and generates comparative plots of the predicted versus actual voltage values.
 
-Repository Structure
-ImpedanceAwareGCNConv: The custom Graph Convolutional Network layer that incorporates impedance modulation.
-ImpedanceAwareGCN: The full IA-GCN model utilizing the custom layer for voltage estimation tasks.
+Repository Overview
+Impedance_Mag_Aware_GCN.py: Contains the IA-GCN model implementation, emphasizing impedance modulation within the GCN framework.
+mydata.hf.zip: The compressed data file for model input.
 Performance
-The IA-GCN model demonstrates superior performance in estimating voltages within electrical distribution networks, significantly outperforming conventional GCN models. Detailed performance metrics are provided within the repository.
+The IA-GCN model markedly improves voltage estimation in electrical distribution networks, surpassing traditional GCN models in precision. Detailed performance metrics are available in the repository.
 
-Contribution
-Contributions to enhance or extend the IA-GCN model are welcome. Feel free to fork this repository and submit pull requests with your improvements.
+Citing This Work
+If you use this code in your research, please cite the following paper:
+"Impedance-Aware Graph Convolutional Networks for Voltage Estimation in Active Distribution Networks."
 
 
+Contributions
+We welcome contributions to enhance or extend the IA-GCN model. Fork this repository and submit pull requests with your improvements.
