@@ -44,18 +44,22 @@ Move the mydata.h5 file into the project's root directory.
 
 # Running the Model
 Execute the Impedance_Mag_Aware_GCN.py script to run the model:
+
 python Impedance_Mag_Aware_GCN.py
 
 This initiates the model's training phase, outputs performance metrics, and generates comparative plots of the predicted versus actual voltage values.
 
 # Repository Overview
 Impedance_Mag_Aware_GCN.py: Contains the IA-GCN model implementation, emphasizing impedance modulation within the GCN framework.
+
 mydata.hf.zip: The compressed data file for model input.
-Performance
+
+# Performance
 The IA-GCN model markedly improves voltage estimation in electrical distribution networks, surpassing traditional GCN models in precision. Detailed performance metrics are available in the repository.
 
 # Citing This Work
 If you use this code in your research, please cite the following paper:
+
 "Impedance-Aware Graph Convolutional Networks for Voltage Estimation in Active Distribution Networks."
 
 
