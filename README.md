@@ -23,7 +23,7 @@ First, clone the repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/yourusername/ia-gcn.git
+git clone https://github.com/aravi2/GCN-Variants-For-PowerSystems
 cd ia-gcn
 Next, install the required Python packages:
 
